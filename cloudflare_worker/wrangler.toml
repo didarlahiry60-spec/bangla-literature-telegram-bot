@@ -1,0 +1,12 @@
+name = "bangla-lekha-bot"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bng-lekha-db"
+database_id = "fa4b0109-b064-4fe5-80be-56181b8bb418"
+
+[triggers]
+crons = ["0 4 * * *", "0 8 * * *", "0 16 * * *"]

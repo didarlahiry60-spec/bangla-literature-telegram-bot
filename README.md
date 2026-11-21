@@ -1,0 +1,188 @@
+# 📖 বাংলা সাহিত্য টেলিগ্রাম বট (Bangla Literature Telegram Bot)
+
+প্রতিদিন বাঙালি পাঠক ও তরুণ প্রজন্মের হৃদয়ে বাংলা সাহিত্যের শ্রেষ্ঠ ও হৃদয়স্পর্শী নির্যাস পৌঁছে দেওয়ার একটি স্বয়ংক্রিয়, নান্দনিক ও কাব্যিক টেলিগ্রাম বট।
+
+বটটি প্রতিদিন নির্দিষ্ট ৩টি প্রহরে (সকাল ১০:০০, দুপুর ০২:০০ ও রাত ১০:০০ - বাংলাদেশ সময়) ব্যবহারকারীদের কাছে ১০০-২০০ শব্দের মনোমুগ্ধকর সাহিত্যের নির্যাস পৌঁছে দেয়।
+
+---
+
+## ✨ বটের মূল বৈশিষ্ট্যসমূহ
+
+1. **কাব্যিক ঢং ও নন্দনতত্ত্ব (Aesthetic Poetic Vibe):**
+   - বটের প্রতিটি বার্তা অত্যন্ত মার্জিত, সুমধুর ও সাহিত্যিক ভঙ্গিমায় রচিত।
+   - প্রতিটি সাহিত্যের নির্যাসে থাকে:
+     - 📖 **গ্রন্থ / উৎস** (Book Title / Source)
+     - ✍️ **লেখকের নাম** (Author)
+     - 🏷️ **ধারা / ক্যাটাগরি** (Category)
+     - **১০০–২০০ শব্দের অনবদ্য নির্যাস** (100–200 words excerpt)
+     - 🌿 **ভাবানুভূতি ও কাব্যিক মন্তব্য** (Aesthetic commentary/vibe)
+
+2. **সমৃদ্ধ সাহিত্য ভাণ্ডার (Curated Classical & Modern Library):**
+   - **রবীন্দ্রনাথ ঠাকুর** (শেষের কবিতা, গীতাঞ্জলি, চোখের বালি, চতুরঙ্গ, নির্ঝরের স্বপ্নভঙ্গ)
+   - **কাজী নজরুল ইসলাম** (বিদ্রোহী, কুহেলিকা, চক্রবাক, বাঁধন-হারা)
+   - **হুমায়ূন আহমেদ** (দেবী, কোথাও কেউ নেই, শঙ্খনীল কারাগার, বাদল দিনের দ্বিতীয় কদম ফুল, মধ্যাহ্ন, জোছনা ও জননীর গল্প)
+   - **সুনীল গঙ্গোপাধ্যায়** (কেউ কথা রাখেনি, সেই সময়, প্রথম আলো, একা এবং কয়েকজন)
+   - **শীর্ষেন্দু মুখোপাধ্যায়** (মানবজমিন, দূরবীন, পার্থিব)
+   - **জীবনানন্দ দাশ** (বনলতা সেন, ধূসর পাণ্ডুলিপি, মাল্যবান, রূপসী বাংলা)
+   - **হেলাল হাফিজ** (নিষিদ্ধ সম্পাদকীয়, দুঃখের আরেক নাম, যে জলে আগুন জ্বলে)
+   - **রুদ্র মুহম্মদ শহিদুল্লাহ** (ভালো আছি ভালো থেকো, বাতাসে লাশের গন্ধ)
+   - **জয় গোস্বামী** (বেনীমাধব, মেঘবালিকার জন্য রূপকথা)
+   - **সমকালীন ট্রেন্ডিং ও আধুনিক চিন্তা** (সাদাত হোসাইন, সোশ্যাল মিডিয়া ও আত্মোপলব্ধির ভাবনা)
+
+3. **দ্বৈত কিউরেশন ইঞ্জিন (Curated + Gemini AI Fallback):**
+   - ইন্টারনেট বা অফলাইন উভয় অবস্থাতেই নিরবচ্ছিন্নভাবে চলার জন্য সমৃদ্ধ লোকাল ডাটাবেস।
+   - `.env` ফাইলে `GEMINI_API_KEY` দিলে বট স্বয়ংক্রিয়ভাবে নতুন নতুন বই ও ট্রেন্ডিং লেখার নির্যাস নিখুঁত বাংলা কাব্যিক ঢঙে সংগ্রহ/উপস্থাপন করতে পারে।
+
+4. **স্বয়ংক্রিয় মাল্টি-ইউজার শিডিউলিং (JobQueue & SQLite):**
+   - **সকাল ১০:০০ (১০:০০ AM):** প্রভাতী সাহিত্যরস, মননশীল চিন্তা ও উদ্দীপনা
+   - **দুপুর ০২:০০ (০২:০০ PM):** উপন্যাসের টানটান পর্ব ও রোমাঞ্চকর প্রেমের কথন
+   - **রাত ১০:০০ (১০:০০ PM):** নিশীথ প্রহর, গভীর জীবনদর্শন, বিরহ ও শান্তিময় কবিতা
+   - যেকোনো ব্যবহারকারী `/start` চাপলে SQLite ডাটাবেসে সেভ হয়ে স্বয়ংক্রিয়ভাবে দৈনিক শিডিউলে যুক্ত হয়ে যায়।
+
+---
+
+## 🛠️ টেলিগ্রাম বট টোকেন পাওয়ার নিয়ম (@BotFather)
+
+একটি টেলিগ্রাম বট তৈরি করতে আপনার একটি নিজস্ব API Token লাগবে:
+
+1. আপনার টেলিগ্রাম অ্যাপে গিয়ে সার্চ বারে লিখুন: `@BotFather` (নীল ভেরিফাইড টিক চিহ্নযুক্ত)।
+2. চ্যাটে প্রবেশ করে `/start` পাঠান।
+3. এরপর পাঠান: `/newbot`
+4. বটের একটি সুন্দর নাম দিন (যেমন: `Bangla Lekha` বা `বাংলা সাহিত্য সুধা`)।
+5. এরপর বটের একটি অনন্য ইউজারনেম দিন যার শেষে `bot` শব্দটি থাকতে হবে (যেমন: `BanglaLekhaBot` বা `amar_sahitto_bot`)।
+6. `@BotFather` আপনাকে একটি API Token প্রদান করবে, যা দেখতে এমন হবে:
+   ```text
+   7123456789:ABCdefGhIJKlmNoPQRstUVwxyz12345
+   ```
+7. এই টোকেনটি কপি করে সংরক্ষণ করুন।
+
+---
+
+## 🚀 সেটআপ ও ইনস্টলেশন নির্দেশিকা
+
+### ধাপ ১: রিপোজিটরি বা ফোল্ডারে প্রবেশ
+```bash
+cd "Bng lekha"
+```
+
+### ধাপ ২: ভার্চুয়াল এনভায়রনমেন্ট তৈরি ও চালু করা
+```bash
+# ভার্চুয়াল এনভায়রনমেন্ট তৈরি (যদি না থাকে)
+virtualenv venv
+
+# অ্যাক্টিভেট করুন
+source venv/bin/activate
+```
+
+### ধাপ ৩: ডিপেনডেন্সি ইনস্টল
+```bash
+pip install -r requirements.txt
+```
+
+### ধাপ ৪: এনভায়রনমেন্ট ভেরিয়েবল কনফিগারেশন (.env)
+`.env.example` ফাইলটি কপি করে `.env` নামে সংরক্ষণ করুন:
+```bash
+cp .env.example .env
+```
+এরপর যেকোনো টেক্সট এডিটর দিয়ে `.env` ফাইলটি খুলুন এবং আপনার তথ্য বসান:
+```ini
+# BotFather থেকে পাওয়া আপনার টেলিগ্রাম বট টোকেন
+TELEGRAM_BOT_TOKEN=7123456789:ABCdefGhIJKlmNoPQRstUVwxyz12345
+
+# ঐচ্ছিক: গুগল জেমিনি এপিআই কি (AI কিউরেশনের জন্য)
+GEMINI_API_KEY=
+
+# টাইমজোন
+TIMEZONE=Asia/Dhaka
+
+# সাবস্ক্রাইবার ডাটাবেসের নাম
+DATABASE_PATH=subscribers.db
+```
+
+### ধাপ ৫: বট চালু করা
+```bash
+python bot.py
+```
+টার্মিনালে দেখতে পাবেন:
+```text
+🚀 বাংলা সাহিত্য বট শুরু হচ্ছে...
+📍 টাইমজোন: Asia/Dhaka
+⏰ দৈনিক ডেলিভারি সূচি: সকাল ১০:০০, দুপুর ০২:০০, রাত ১০:০০
+```
+
+---
+
+## 📱 টেলিগ্রাম বটের কমান্ডসমূহ
+
+| কমান্ড | বিবরণ |
+|---|---|
+| `/start` | কাব্যিক অভ্যর্থনা এবং স্বয়ংক্রিয়ভাবে দৈনিক ৩ প্রহরে সাবস্ক্রাইব হওয়া |
+| `/now` | শিডিউলের অপেক্ষা না করে তাৎক্ষণিকভাবে যেকোনো একটি লেখা পড়া (যেমন: `/now poetry` বা `/now রবীন্দ্রনাথ`) |
+| `/category` | পছন্দের সাহিত্যধারা নির্বাচন (প্রেম, কবিতা, উপন্যাস, জীবনদর্শন, ট্রেন্ডিং) |
+| `/browser` / `/browse` | প্রিয় লেখক (রবীন্দ্রনাথ, নজরুল, হুমায়ূন, জীবনানন্দ, ইত্যাদি) ও সাহিত্য সম্ভার ব্রাউজার |
+| `/learn` | মননশীল চিন্তা, গভীর প্রজ্ঞা ও জীবনদর্শন সমৃদ্ধ সাহিত্য পাঠ |
+| `/boost` | হৃদয়ে উদ্দীপনা জাগানো ও তরুণদের প্রিয় হাইপ তোলা কবিতা পাঠ |
+| `/schedule` / `/plan` | প্রতিদিনের ৩ প্রহরের পাঠের সময় ও সাবস্ক্রিপশন স্ট্যাটাস দেখা |
+| `/subscribe` | প্রাত্যহিক সাহিত্য ডেলিভারি পুনরায় সক্রিয় (Resume) করা |
+| `/unsubscribe` | প্রাত্যহিক ডেলিভারি সাময়িক স্থগিত (Pause) করা |
+| `/help` | বটের সকল সুবিধা ও নির্দেশিকা দেখা |
+| সাধারণ বার্তা | বটে কোনো শুভেচ্ছা বা অনুভূতি লিখে পাঠালে কাব্যিক সাহিত্যিক ঢঙে উত্তর প্রদান |
+
+---
+
+## 🧪 স্বয়ংক্রিয় টেস্ট রান করা
+
+প্রকল্পের সকল ফাংশনালিটি (শব্দসংখ্যা ১০০-২০০ words, লেখক তালিকা, শিডিউলার সময়, ডাটাবেস ও হ্যান্ডলারসমূহ) স্বয়ংক্রিয়ভাবে যাচাই করার জন্য:
+
+```bash
+pytest -v test_bot.py
+```
+
+সকল ২৭টি টেস্ট সফলভাবে পাস করবে:
+```text
+test_bot.py::test_content_library_integrity PASSED
+test_bot.py::test_word_counts PASSED
+test_bot.py::test_all_key_authors_represented PASSED
+test_bot.py::test_all_categories_represented PASSED
+test_bot.py::test_slot_coverage PASSED
+test_bot.py::test_format_snippet_structure PASSED
+test_bot.py::test_format_snippet_custom_headers PASSED
+test_bot.py::test_get_local_snippet_filtering PASSED
+test_bot.py::test_get_local_snippet_author_filtering PASSED
+test_bot.py::test_get_local_snippet_exclusion PASSED
+test_bot.py::test_gemini_dynamic_snippet_parsing PASSED
+test_bot.py::test_add_and_retrieve_subscriber PASSED
+test_bot.py::test_subscriber_pause_and_resume PASSED
+test_bot.py::test_set_subscriber_status_creates_record_if_absent PASSED
+test_bot.py::test_category_preference PASSED
+test_bot.py::test_set_preferred_category_creates_record_if_absent PASSED
+test_bot.py::test_delivery_history PASSED
+test_bot.py::test_bot_application_builder PASSED
+test_bot.py::test_schedule_times PASSED
+test_bot.py::test_scheduled_broadcast_flow PASSED
+test_bot.py::test_start_command_registers_subscriber PASSED
+test_bot.py::test_now_command_delivers_excerpt PASSED
+test_bot.py::test_now_command_with_category_and_author_args PASSED
+test_bot.py::test_category_command_with_and_without_args PASSED
+test_bot.py::test_additional_commands PASSED
+test_bot.py::test_conversational_chat_message_handler PASSED
+test_bot.py::test_callback_category_and_author_selection PASSED
+```
+
+---
+
+## 🏛️ প্রজেক্ট স্ট্রাকচার
+
+```
+.
+├── bot.py                # প্রধান টেলিগ্রাম বট অ্যাপ্লিকেশন ও শিডিউলার
+├── config.py             # কনফিগারেশন, সময়সূচি ও ক্যাটাগরি ম্যাপিং
+├── content_library.py    # ৪২টি নির্বাচিত ক্লাসিক ও ট্রেন্ডিং বাংলা সাহিত্যের নির্যাস (১০০-২০০ শব্দ)
+├── curator.py            # ফরম্যাটিং, ক্যাটাগরি ও লেখক ফিল্টারিং এবং জেমিনি AI কিউরেশন ইঞ্জিন
+├── database.py           # SQLite ডাটাবেস ম্যানেজার (WAL মোড, সাবস্ক্রাইবার ও পঠিত হিস্ট্রি)
+├── requirements.txt      # ডিপেনডেন্সি তালিকা
+├── .env.example          # পরিবেশ কনফিগারেশনের নমুনা
+├── pytest.ini            # পাইটেস্ট কনফিগারেশন
+├── test_bot.py           # ২৭টি স্বয়ংক্রিয় ইউনিট ও ইন্টিগ্রেশন টেস্ট
+└── README.md             # পূর্ণাঙ্গ ব্যবহার নির্দেশিকা (বাংলা)
+```

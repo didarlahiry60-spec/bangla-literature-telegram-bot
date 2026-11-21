@@ -1,0 +1,10 @@
+.env
+.dev.vars
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+*.db
+*.db-journal
+*.log
+.wrangler/
